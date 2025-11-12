@@ -1,13 +1,14 @@
 <?php
-$DB_HOST = getenv('DB_HOST') ?: 'localhost';
-$DB_NAME = getenv('DB_NAME') ?: 'minimundos';
-$DB_USER = getenv('DB_USER') ?: 'root';
-$DB_PASS = getenv('DB_PASS') ?: '';
+$DB_HOST = 'sql300.infinityfree.com'; 
+$DB_NAME = 'if0_40402953_teste';    
+$DB_USER = 'if0_40402953';
+$DB_PASS = 'FCEZs2QxMnGcWHm';
 
-$TABLE = 'coleta_seletiva';
+
+$TABLE = 'hospital';
 $COLUMNS = [
-  ['name' => 'bairro', 'label' => 'Bairro', 'type' => 'text'],
-  ['name' => 'tipo_residuo', 'label' => 'Tipo de Resíduo', 'type' => 'text'],
-  ['name' => 'peso_total', 'label' => 'Peso Total (kg)', 'type' => 'number', 'step' => '0.01'],
-  ['name' => 'reciclavel', 'label' => 'Peso Reciclável (kg)', 'type' => 'number', 'step' => '0.01']
+  ['name' => 'nome', 'label' => 'Hospital', 'type' => 'text'],
+  ['name' => 'leitos', 'label' => 'Nº de Leitos', 'type' => 'number'],
+  ['name' => 'atendimentos', 'label' => 'Nº de Atendimentos', 'type' => 'number'],
+  ['name' => 'obitos', 'label' => 'Nº de Óbitos', 'type' => 'number']
 ];
